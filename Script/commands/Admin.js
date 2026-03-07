@@ -22,22 +22,22 @@ module.exports.run = async function({ api, event }) {
 ┌───────────────⭓
 │ 𝗢𝗪𝗡𝗘𝗥 𝗗𝗘𝗧𝗔𝗜𝗟𝗦
 ├───────────────
-│ 👤 𝐍𝐚𝐦𝐞 : 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐈𝐬𝐥𝐚𝐦
+│ 👤 𝐍𝐚𝐦𝐞 : 𝐒𝐮𝐦𝐨𝐧 𝐈𝐬𝐥𝐚𝐦
 │ 🚹 𝐆𝐞𝐧𝐝𝐞𝐫 : 𝐌𝐚𝐥𝐞
 │ ❤️ 𝐑𝐞𝐥𝐚𝐭𝐢𝐨𝐧 : 𝐒𝐢𝐧𝐠𝐥𝐞
 │ 🎂 𝐀𝐠𝐞 : 𝟏𝟖+
 │ 🕌 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧 : 𝐈𝐬𝐥𝐚𝐦
-│ 🎓 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 : 𝐇𝐒𝐂 (𝟐𝟎𝟐𝟔)
-│ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : 𝐊𝐡𝐚𝐠𝐫𝐚𝐜𝐡𝐡𝐚𝐫𝐢
+│ 🎓 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 : 𝐇𝐒𝐂 (𝟐𝟎𝟐5)
+│ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : 𝐆𝐚𝐢𝐛𝐚𝐧𝐝𝐡𝐚
 └───────────────⭓
 
 ┌───────────────⭓
 │ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞𝗦
 ├───────────────
 │ 📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸:
-│ https://fb.com/100001039692046
+│ https://fb.com/61586724548553
 │ 💬 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽:
-│ https://wa.me/01882333052
+│ https://wa.me/61586724548553
 └───────────────⭓
 
 ┌───────────────⭓
@@ -49,7 +49,7 @@ module.exports.run = async function({ api, event }) {
  attachment: fs.createReadStream(__dirname + "/cache/owner.jpg")
  }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/owner.jpg"));
 
- return request("https://i.imgur.com/idyXtoO.jpeg")
+ return request("https://imgur.com/a/sumon-hUudRDV.jpeg")
  .pipe(fs.createWriteStream(__dirname + '/cache/owner.jpg'))
  .on('close', () => callback());
 };
